@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+@font-face {
+    font-family: 'bubble';
+    src: url('/font/Bubble_Runes.ttf');
+}
+
+@font-face {
+    font-family: 'Verdana';
+    src: url(/font/Verdana.ttf);
+}
+
+canvas {
+    display: flex;
+    margin: 0 auto;
+    width: 1250px;
+    height: 620px;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    font-family: "Bungee", sans-serif;
+}
+
+/* CSS adicional para a nova div que envolve o canvas */
+.canvas-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Define uma ordem de empilhamento para colocar o canvas atrás do conteúdo */
+}
+
+/* Outros estilos permanecem os mesmos */
+
+
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.container-foto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.quadrados-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadrado {
+    width: 30%;
+    height: 20em;
+    display: inline-block;
+}
+
+.titulo {
+    color: white;
+    font-family: 'bubble';
+    font-size: 50px;
+}
+
+.primeiro {
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    background-color: #151515;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid #FFFFFF4A;
+    border-top: 2px solid #FFFFFF4A;
+    border-bottom: 2px solid #FFFFFF4A;
+
+}
+
+.segundo {
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    background-color: #214790;
+    border-right: 2px solid #FFFFFF4A;
+    border-top: 2px solid #FFFFFF4A;
+    border-bottom: 2px solid #FFFFFF4A;
+
+}
+
+.primeiro-button {
+    width: 200px;
+    height: 35px;
+    background-color: #4F70E5;
+    border-radius: 0.5rem;
+    border-color: #ffffffd8;
+    border-width: 1px;
+}
+
+
+.moon-dois {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.moon-dois img {
+    width: 50px;
+}
+
+.moon-um {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.moon-um img {
+    width: 50px;
+}
+
+.container-segundo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.primeiro a {
+    font-family: "Bungee", sans-serif;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.segundo a {
+    font-family: "Bungee", sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.secundario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    background-color: #001e974b;
+
+}
+
+.imagens {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.img {
+    margin-bottom: 26px;
+}
+
+.paragrafos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text {
+    font-size: 22px;
+    margin-top: 31px;
+}
+
+.text-um {
+    margin: 0px 0px 11px 0px;
+    font-size: 13px;
+    color: #24FF96;
+    font-family: 'Verdana';
+}
+
+.text-dois {
+    font-size: 10px;
+    color: #BECCF9;
+    font-family: 'Verdana';
+}
+
+.container-usuario {
+    display: flex;
+    border-radius: 50%;
+    border: 2px solid white;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.primario:hover {
+    background-color: #86a0ffc4;
+}
+
+@media(max-width: 767px) {
+
+.quadrados-container {
+
+ display: flex;
+ flex-direction: column;
+
+}
+
+.imagens {
+
+ width: 70px;
+
+}
+
+.text {
+
+ margin: 0;
+
+}
+
+.text-dois {
+
+ margin: 0;
+
+}
+
+.img {
+
+ margin: 5px;
+
+}
+
+.quadrado {
+
+width: 70%;
+height: 15em;
+display: inline-block;
+
+    }
+
+.primeiro {
+
+border-top-left-radius: 0.5em;
+border-top-right-radius: 0.5em;
+border-bottom-left-radius: 0%;
+border: 0.5em;
+background-color: #151515;
+color: #FFFFFF;
+justify-content: center;
+align-items: center;
+border-left: 2px solid #FFFFFF4A;
+border-top: 2px solid #FFFFFF4A;
+border-right: 2px solid #FFFFFF4A;
+
+}
+
+.segundo {
+    
+border-top-right-radius: 0%;
+border-bottom-right-radius: 0.5em;
+border-bottom-left-radius: 0.5em;
+background-color: #214790;
+border-right: 2px solid #FFFFFF4A;
+border-top: 2px solid #FFFFFF4A;
+border-left: 2px solid #FFFFFF4A;
+
+ }
+}
