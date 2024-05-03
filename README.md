@@ -16,6 +16,4 @@ Projeto construido para testar minhas habilidades com as tecnologias utilizadas 
 - JavaScript
 - Git e Github
 
->## Contado
-meiamonebr@hotmail.com
  
