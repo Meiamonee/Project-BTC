@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'bubble';
-    src: url('/font/Bubble_Runes.ttf');
+    src: url('./font/Bubble_Runes.ttf');
 }
 
 @font-face {
