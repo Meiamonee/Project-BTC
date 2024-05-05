@@ -1,14 +1,19 @@
 function efeitoMatrix(neo) {
   var runas = ['ᚠ', 'ᚢ', 'ᚦ', 'ᚨ', 'ᚱ', 'ᚲ', 'ᚷ', 'ᚹ', 'ᚺ', 'ᚾ', 'ᛁ', 'ᛃ', 'ᛈ', 'ᛇ', 'ᛉ', 'ᛋ', 'ᛏ', 'ᛒ', 'ᛖ', 'ᛗ', 'ᛚ', 'ᛜ', 'ᛞ', 'ᛟ'];
   var caracteres = [];
+  var intervalo; // Variável para armazenar o intervalo de atualização
 
   function iniciarCaracteres() {
-      caracteres = Array(Math.floor(window.innerWidth / 20) + 1).fill(0).map(function (_, index) {
+      var tamanhoFonte = 20; // Tamanho da fonte base
+      if (window.innerWidth < 768) {
+          tamanhoFonte = 10; // Reduz o tamanho da fonte para dispositivos móveis
+      }
+      caracteres = Array(Math.floor(window.innerWidth / tamanhoFonte) + 1).fill(0).map(function (_, index) {
           return {
-              x: index * 20,
+              x: index * tamanhoFonte,
               y: Math.floor(Math.random() * window.innerHeight),
               tamanho: Math.floor(Math.random() * 15) + 15,
-              velocidade: Math.random() * 15 + 10, // Ajuste a velocidade vertical aqui
+              velocidade: Math.random() * 5 + 5, // Ajuste a velocidade vertical aqui
               runa: runas[Math.floor(Math.random() * runas.length)]
           };
       });
@@ -31,16 +36,25 @@ function efeitoMatrix(neo) {
       });
   }
 
+  function iniciarIntervalo() {
+      intervalo = setInterval(desenhaMatrix, 50); // Ajusta a velocidade de atualização
+  }
+
+  function limparIntervalo() {
+      clearInterval(intervalo);
+  }
+
   iniciarCaracteres();
-  setInterval(desenhaMatrix, 50); // Ajusta a velocidade de atualização
+  iniciarIntervalo();
+
+  window.addEventListener('resize', function () {
+      limparIntervalo();
+      iniciarCaracteres();
+      iniciarIntervalo();
+  });
 }
 
 window.onload = function () {
   var canvas = document.getElementById('canvas');
   efeitoMatrix(canvas);
 };
-
-window.addEventListener('resize', function () {
-  var canvas = document.getElementById('canvas');
-  efeitoMatrix(canvas);
-});

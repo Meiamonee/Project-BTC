@@ -272,3 +272,21 @@ border-left: 2px solid #FFFFFF4A;
 
  }
 }
+
+@media(min-width: 1920px) {
+    .quadrado {
+        width: 20%; /* Reduz a largura do quadrado para 20% em telas maiores que 1920px de largura */
+    }
+
+    .titulo {
+        font-size: 3em; /* Tamanho da fonte ajustado para 3em */
+    }
+
+    .text-um {
+        font-size: 1.2em; /* Tamanho da fonte ajustado para 1.2em */
+    }
+
+    .imagens {
+        width: 100px; /* Largura da imagem ajustada para 150px */
+    }
+}
