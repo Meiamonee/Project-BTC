@@ -24,7 +24,7 @@ body {
     font-family: "Bungee", sans-serif;
 }
 
-/* CSS adicional para a nova div que envolve o canvas */
+
 .canvas-container {
     position: absolute;
     top: 0;
@@ -32,10 +32,10 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    /* Define uma ordem de empilhamento para colocar o canvas atrás do conteúdo */
+    
 }
 
-/* Outros estilos permanecem os mesmos */
+
 
 
 canvas {
@@ -44,7 +44,7 @@ canvas {
     height: 100%;
 }
 
-.container-foto {
+.photo-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,25 +53,25 @@ canvas {
     z-index: 1;
 }
 
-.quadrados-container {
+.squares-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.quadrado {
+.square {
     width: 30%;
     height: 20em;
     display: inline-block;
 }
 
-.titulo {
+.title {
     color: white;
     font-family: 'bubble';
     font-size: 50px;
 }
 
-.primeiro {
+.first {
     border-top-left-radius: 0.5em;
     border-bottom-left-radius: 0.5em;
     background-color: #151515;
@@ -84,7 +84,7 @@ canvas {
 
 }
 
-.segundo {
+.second {
     border-top-right-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
     background-color: #214790;
@@ -94,7 +94,7 @@ canvas {
 
 }
 
-.primeiro-button {
+.first-button {
     width: 200px;
     height: 35px;
     background-color: #4F70E5;
@@ -104,32 +104,32 @@ canvas {
 }
 
 
-.moon-dois {
+.moon-two {
     display: flex;
     justify-content: flex-end;
 }
 
-.moon-dois img {
+.moon-two img {
     width: 50px;
 }
 
-.moon-um {
+.moon-one {
     display: flex;
     justify-content: flex-start;
 }
 
-.moon-um img {
+.moon-one img {
     width: 50px;
 }
 
-.container-segundo {
+.second-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.primeiro a {
+.first a {
     font-family: "Bungee", sans-serif;
     color: white;
     text-align: center;
@@ -137,13 +137,13 @@ canvas {
 }
 
 
-.segundo a {
+.second a {
     font-family: "Bungee", sans-serif;
     color: white;
     text-decoration: none;
 }
 
-.secundario {
+.secondary {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -152,7 +152,7 @@ canvas {
 
 }
 
-.imagens {
+.images {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -163,7 +163,7 @@ canvas {
     margin-bottom: 26px;
 }
 
-.paragrafos {
+.paragraphs {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,20 +175,20 @@ canvas {
     margin-top: 31px;
 }
 
-.text-um {
+.text-one {
     margin: 0px 0px 11px 0px;
     font-size: 13px;
     color: #24FF96;
     font-family: 'Verdana';
 }
 
-.text-dois {
+.text-two {
     font-size: 10px;
     color: #BECCF9;
     font-family: 'Verdana';
 }
 
-.container-usuario {
+.user-container {
     display: flex;
     border-radius: 50%;
     border: 2px solid white;
@@ -199,20 +199,20 @@ canvas {
     justify-content: center;
 }
 
-.primario:hover {
+.primary:hover {
     background-color: #86a0ffc4;
 }
 
 @media(max-width: 767px) {
 
-.quadrados-container {
+.squares-container {
 
  display: flex;
  flex-direction: column;
 
 }
 
-.imagens {
+.images {
 
  width: 70px;
 
@@ -224,7 +224,7 @@ canvas {
 
 }
 
-.text-dois {
+.text-two {
 
  margin: 0;
 
@@ -236,7 +236,7 @@ canvas {
 
 }
 
-.quadrado {
+.square {
 
 width: 70%;
 height: 15em;
@@ -244,7 +244,7 @@ display: inline-block;
 
     }
 
-.primeiro {
+.first {
 
 border-top-left-radius: 0.5em;
 border-top-right-radius: 0.5em;
@@ -260,7 +260,7 @@ border-right: 2px solid #FFFFFF4A;
 
 }
 
-.segundo {
+.second {
     
 border-top-right-radius: 0%;
 border-bottom-right-radius: 0.5em;
@@ -274,19 +274,19 @@ border-left: 2px solid #FFFFFF4A;
 }
 
 @media(min-width: 1920px) {
-    .quadrado {
-        width: 20%; /* Reduz a largura do quadrado para 20% em telas maiores que 1920px de largura */
+    .square {
+        width: 20%; 
     }
 
-    .titulo {
-        font-size: 3em; /* Tamanho da fonte ajustado para 3em */
+    .title {
+        font-size: 3em; 
     }
 
-    .text-um {
-        font-size: 1.2em; /* Tamanho da fonte ajustado para 1.2em */
+    .text-one {
+        font-size: 1.2em; 
     }
 
-    .imagens {
-        width: 100px; /* Largura da imagem ajustada para 150px */
+    .images {
+        width: 100px;
     }
 }
