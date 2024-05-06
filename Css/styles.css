@@ -22,6 +22,7 @@ body {
     overflow: hidden;
     background-color: black;
     font-family: "Bungee", sans-serif;
+    overflow-y: auto; 
 }
 
 
@@ -202,7 +203,41 @@ canvas {
 .primary:hover {
     background-color: #86a0ffc4;
 }
+  
+  .check-wallet input[type="text"] {
+    padding: 12px;
+    width: 300px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f2f2f2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+  }
+  
+  .check-wallet button {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .check-wallet button:hover {
+    background-color: #0056b3;
+  }
 
+  .check-wallet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px; 
+    color: white; 
+  }
+
+ 
 @media(max-width: 767px) {
 
 .squares-container {
